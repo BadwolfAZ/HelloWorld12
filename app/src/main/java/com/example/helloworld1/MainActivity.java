@@ -309,6 +309,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         updateText(3);
 
     }
+    //test
     public void updateText(int i)
     {
 
