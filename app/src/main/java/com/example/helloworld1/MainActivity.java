@@ -1,5 +1,6 @@
 package com.example.helloworld1;
 
+import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -21,8 +22,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements SensorEventListener {
+public class MainActivity extends AppCompatActivity implements SensorEventListener{
     private SensorManager sManager;
+    private GLSurfaceView gLview;
     private TextView tv;
     public int m_n1;
     public int m_n2;
@@ -51,6 +53,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         m_b = false;
         m_result = 0.0;
         m_calc = 1;
+
+
+
+
+        gLview = new MyGLSurfaceView(this);
+
+        setContentView(gLview);
 
     }
 
